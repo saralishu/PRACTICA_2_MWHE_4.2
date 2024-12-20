@@ -33,8 +33,45 @@
 
 </head>
 <body>
-  <header></header>
-  <main></main>
+  <header>
+     <!-- Menú -->
+     <div id="menu-bar">
+      <a id="title" href="#">FLOW ISLEÑO FEST</a>
+      <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      <nav id="menu">
+          <span id="close" onclick="closeMenu()"><i class="fa-solid fa-xmark" ></i></span>
+          <ul>
+            <li>
+                <a href="#carta" onclick="closeMenu()">CARTA</a>
+            </li>
+            <li>
+                <a href="#productos" onclick="closeMenu()">PRODUCTOS</a>
+            </li>
+            <li>
+                <a href="#merch" onclick="closeMenu()">MERCH</a>
+            </li>
+            <li>
+                <a href="#ubicaciones" onclick="closeMenu()">UBICACIONES</a>
+            </li>
+            <li>
+              <a href="" onclick="closeMenu()">SOBRE NOSOTROS</a>
+            </li>
+            <li>
+                <a href="" onclick="closeMenu()">BLOG</a>
+            </li>
+          </ul>
+      </nav>
+  </div>
+  </header>
+  <main>
+    <section id="carta"></section>
+
+    <section id="productos"></section>
+
+    <section id="merch"></section>
+
+    <section id="ubicaciones"></section>
+  </main>
   <footer></footer>
   
   
