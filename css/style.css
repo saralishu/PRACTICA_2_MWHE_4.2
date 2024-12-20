@@ -8,20 +8,12 @@
     --color-beige-2: #CEBAA1;
 }
 
-.instrument-sans {
-    font-family: "Instrument Sans", serif;
-}
 
-.instrument-serif-regular {
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.instrument-serif-regular-italic {
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: italic;
+p {
+  font-family: "Instrument Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -69,4 +61,31 @@ a {
     background-color: var(--color-rosa);
     color: var(--color-crema);
     transition: background-color 0.5s ease;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-marron)!important;
+    padding: 2rem;
+}
+
+.widget-title, .link-secondary, .mb-4, .copyright{
+    color:var(--color-crema)!important;
+}
+
+.fa-brands {
+    color:var(--color-crema);
+    transition: color 0.3s ease, color 0.3s ease;
+}
+.fa-brands:hover {
+    color:var(--color-rosa);
+}
+
+#logo_white {
+    padding-bottom:1rem;
+}
+
+.form-control {
+    border-radius: 25px;
+
 }
