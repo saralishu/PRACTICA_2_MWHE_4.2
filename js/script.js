@@ -1,6 +1,21 @@
 console.log("Hello world!");
 
-    // Variable para el temporizador de scroll
+$(document).ready(function () {
+    "use strict";
+
+    // Abrir menú
+    $("#menu-toggle").click(function () {
+        $("#menu").removeClass("translate-end").addClass("translate-start");
+    });
+
+    // Cerrar menú
+    $("#close, #menu a").click(function () {
+        $("#menu").removeClass("translate-start").addClass("translate-end");
+    });
+});
+
+
+// Variable para el temporizador de scroll
     let timeoutId;
 
     $(window).scroll(function() {
@@ -13,7 +28,6 @@ console.log("Hello world!");
             });
         }, 300); // Retraso antes de restablecer
     });
-
 
 // BOTÓN PARA VOLVER ARRIBA
 

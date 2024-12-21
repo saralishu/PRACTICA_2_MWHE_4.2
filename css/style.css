@@ -22,6 +22,7 @@ p {
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: "Instrument Sans", serif;
 }
 
 /* Selectores generales */
@@ -43,6 +44,7 @@ a {
 .btn-primary {
     background-color: var(--color-marron);
     color: var(--color-crema);
+    font-weight: 600;
     transition: background-color 0.5s ease;
 }
 
@@ -53,6 +55,7 @@ a {
 
 .btn-secondary {
     background-color: var(--color-crema);
+    font-weight: 600;
     color: var(--color-marron);
     transition: background-color 0.5s ease;
 }
@@ -61,6 +64,57 @@ a {
     background-color: var(--color-rosa);
     color: var(--color-crema);
     transition: background-color 0.5s ease;
+}
+/* NAV */
+#menu-bar {
+    padding: 0.8em 1.6em;
+    background-color: var(--color-marron);
+}
+.fa-bars {
+    color: var(--color-crema);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+.fa-bars:hover {
+    color: var(--color-rosa);
+}
+#menu {
+    transition: transform 0.5s;
+    z-index: 9998;
+}
+.translate-end {
+    transform: translateX(100%);
+}
+.translate-start {
+    transform: translateX(0%);
+}
+#menu > ul > li > a {
+    color: var(--color-crema);
+    font-size: 3rem;
+    transition: color 0.3s ease;
+    font-size: calc(2rem + 1vw);
+    font-weight: 700;
+}
+#menu > ul > li:hover > a {
+    color: var(--color-rosa);
+}
+#close i {
+    font-size: 2rem;
+    color: var(--color-crema);
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+#close:hover i {
+    color: var(--color-rosa);
+}
+.bg-secondary {
+    background-color: var(--color-marron)!important;
+}
+
+/* MAIN */
+main {
+    background-color: var(--color-crema);
 }
 
 /* FOOTER */
@@ -75,7 +129,7 @@ footer {
 
 .fa-brands {
     color:var(--color-crema);
-    transition: color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
 }
 .fa-brands:hover {
     color:var(--color-rosa);

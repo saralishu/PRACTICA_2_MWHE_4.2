@@ -34,6 +34,38 @@
 </head>
 <body>
   <header>
+    <!-- Menú -->
+    <div id="menu-bar" class="d-flex align-items-center justify-content-between px-4 py-3">
+      <a href="#navbar">
+        <img src="media/img/logo-espressura-01.png" alt="" width="60" height="60">
+      </a>
+      <i class="fa-sharp fa-solid fa-bars" id="menu-toggle"></i>
+      <nav id="menu" class="position-fixed top-0 end-0 w-100 bg-secondary d-flex flex-column justify-content-center align-items-center vh-100 translate-end">
+          <span id="close" class="position-absolute top-0 end-0 me-3 mt-3">
+              <i class="fa-solid fa-xmark"></i>
+          </span>
+          <ul class="list-unstyled text-center">
+              <li class="my-3">
+                  <a href="#carta" data-bs-toggle="collapse">CARTA</a>
+              </li>
+              <li class="my-3">
+                  <a href="#productos" data-bs-toggle="collapse">PRODUCTOS</a>
+              </li>
+              <li class="my-3">
+                  <a href="#merch" data-bs-toggle="collapse">MERCH</a>
+              </li>
+              <li class="my-3">
+                  <a href="#ubicaciones" data-bs-toggle="collapse">UBICACIONES</a>
+              </li>
+              <li class="my-3">
+                <a href="#" data-bs-toggle="collapse">SOBRE NOSOTROS</a>
+            </li>
+            <li class="my-3">
+              <a href="#" data-bs-toggle="collapse">BLOG</a>
+          </li>
+          </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section id="carta"></section>
@@ -78,7 +110,7 @@
                 </div>
                 <div class="col-12">
                   <div class="d-grid">
-                    <button class="btn btn-secondary" type="submit">SUBSCRIBE</button>
+                    <button class="btn btn-secondary" type="submit">SUSCRÍBETE</button>
                   </div>
                 </div>
               </div>
@@ -89,14 +121,14 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">SUBSCRIBED!</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">YA ESTÁS SUSCRIT@!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body" id="modal-body-content">
-                    Thank you for subscribing with <strong id="user-email"></strong>! You will start receiving our updates soon.
+                    ¡Gracias por unirte  <strong id="user-email"></strong>! Muy pronto tendrás noticias nuestras...
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
@@ -113,7 +145,7 @@
       <div class="row gy-4 gy-md-0 align-items-md-center">
         <div class="col-xs-12 col-md-7 order-1 order-md-0">
           <div class="copyright text-center text-md-start">
-            &copy; 2024. All Rights Reserved.
+            &copy; 2024. Todos los derechos reservados.
           </div>
         </div>
 
