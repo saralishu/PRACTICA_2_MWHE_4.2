@@ -15,20 +15,6 @@ $(document).ready(function () {
 });
 
 
-// Variable para el temporizador de scroll
-    let timeoutId;
-
-    $(window).scroll(function() {
-        clearTimeout(timeoutId);
-
-        timeoutId = setTimeout(function() {
-            $('.brand-description').animate({ opacity: 0 }, 500, function() { // Desvanece la descripción en scroll
-                $(this).css("display", "none");
-                $('.brand-title').fadeIn();
-            });
-        }, 300); // Retraso antes de restablecer
-    });
-
 // BOTÓN PARA VOLVER ARRIBA
 
 let $myButton = $("#btn-back-to-top");
