@@ -66,6 +66,10 @@ a {
     transition: background-color 0.5s ease;
 }
 
+.widget-title {
+    font-family: "Instrument Serif", serif !important;
+}
+
 /* NAV */
 #menu-bar {
     padding: 0.8em 1.6em;
@@ -195,4 +199,8 @@ footer {
 
 .form-control {
     border-radius: 25px;
+}
+
+.widget-title {
+    font-size: calc(1.5rem + 1vw);
 }
