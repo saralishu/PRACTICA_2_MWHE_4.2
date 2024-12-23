@@ -155,6 +155,7 @@ h2 {
     font-family: "Instrument Serif", serif;
     color:var(--color-crema);
     font-size: calc(3rem + 1vw);
+    font-weight: 400;
 
 }
 #video_background {
