@@ -12,6 +12,20 @@ $(document).ready(function () {
     $("#close, #menu a").click(function () {
         $("#menu").removeClass("translate-start").addClass("translate-end");
     });
+
+    // Desplazamiento suave
+    $("#menu a").click(function (event) {
+        var target = $(this).attr("href"); // Obtén el destino del enlace
+        if (target.startsWith("#")) { // Asegúrate de que es un anclaje interno
+            event.preventDefault(); // Previene el comportamiento predeterminado
+            $("html, body").animate(
+                {
+                    scrollTop: $(target).offset().top, // Calcula la posición de la sección
+                },
+                200 // Duración de la animación en milisegundos
+            );
+        }
+    });
 });
 
 
@@ -49,4 +63,6 @@ $('#newsletterForm').on('submit', function(event) {
         alert('Please enter a valid email address.');
     }
 });
+
+
   

@@ -35,6 +35,14 @@ a {
     text-decoration: none;
     color: var(--color-one);
 }
+h1 {
+    font-weight: 700;
+    font-size: calc(3rem + 1vw);
+}
+
+h2 {
+    font-size: calc(2rem + 1vw);
+}
 
 .btn {
     border-radius:25px;
@@ -66,7 +74,7 @@ a {
     transition: background-color 0.5s ease;
 }
 
-.widget-title {
+.widget-title, h2 {
     font-family: "Instrument Serif", serif !important;
 }
 
@@ -161,6 +169,23 @@ a {
 /* MAIN */
 main {
     background-color: var(--color-crema);
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* SEPARADORES */
+
+#separador_2 {
+    background-image: url(https://media.timeout.com/images/105773601/image.jpg);
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 /* BOTÓN BACK TO TOP */
