@@ -121,47 +121,19 @@ a {
     padding: 1rem;
 }
 
-/* HEADER WEB*/
-
-.header_web {
-    position:relative; 
-    overflow: hidden; 
-    padding: 0;
-    transition: 0.4s;  
-}
-
-#header_title {
-    position: absolute;  /* Permite posicionar el contenido sobre el video */
-    z-index: 2;          /* Hace que el texto esté por encima del video */
-    color: var(--color-two);        /* Color del texto para que destaque sobre el video */
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center;    /* Centra horizontalmente */
-    width: 100%;            /* Asegúrate de que ocupe toda la anchura */
-    height: 100%;           /* Asegúrate de que ocupe toda la altura */
-    text-align: center;     /* Alinea el texto dentro de cada línea */
-}
-#header_title H1 {
-    font-family: "Instrument Serif", serif;
-    color:var(--color-crema);
-    font-size: calc(3rem + 1vw);
-
-}
-#video_background {
-    object-fit: cover;  /* Asegura que el video cubra toda el área sin distorsionarse */
-    z-index: 1;         /* Hace que el video esté por detrás del contenido */
-    width: 100%;
-    height:90vh;
-    vertical-align:middle;
-    object-fit: cover; 
-}
-
 /* MAIN */
 main {
     background-color: var(--color-crema);
 }
+/* PRIMER BLOQUE */
+#primer-bloque {
+    height: 100vh;
+    background-image: url(media/img/fondo-granos-cafe.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 /* BOTÓN BACK TO TOP */
 #btn-back-to-top {
