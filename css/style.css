@@ -125,14 +125,110 @@ a {
 main {
     background-color: var(--color-crema);
 }
+
 /* PRIMER BLOQUE */
+
 #primer-bloque {
-    height: 100vh;
-    background-image: url(media/img/fondo-granos-cafe.png);
+    height: 80vh;
+    background-image: url(../media/img/fondo-granos-cafe.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.h1-principal {
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.lead {
+    font-size: 2.5rem;
+}
+b {
+    font-weight: bold !important;
+}
+.bg-container {
+    background-color: var(--color-marron);
+    padding: 100px 100px;
+    border-radius: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    color: var(--color-crema);
+    max-width: 80%;
+    text-align: center;
+
+}
+
+/* SEGUNDO BLOQUE */
+#segundo-bloque {
+    height: 1080px;
+    display: flex;
+}
+
+#segundo-bloque .img-container {
+    flex: 0 0 50%;
+    height: 100%; 
+    overflow: hidden;
+}
+
+#segundo-bloque .img-container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+#segundo-bloque .text-container {
+    flex: 0 0 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 50px; 
+}
+#segundo-bloque h2{
+    font-family: "Instrument Serif";
+    font-size: 8rem;
+}
+
+/* TERCER BLOQUE */
+
+#tercer-bloque {
+    height: 1080px;
+    display: flex;
+}
+
+#tercer-bloque .text-container {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    padding: 50px; /* Espaciado interno */
+}
+
+#tercer-bloque .img-container {
+    flex: 0 0 50%; 
+    height: 100%;
+    overflow: hidden;
+}
+
+#tercer-bloque .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+#tercer-bloque h2 {
+    font-family: "Instrument Serif";
+    font-size: 8rem;
+}
+
+/* CUARTO BLOQUE */
+
+
+
+
 
 
 /* BOTÓN BACK TO TOP */
@@ -175,4 +271,95 @@ footer {
 
 .widget-title {
     font-size: calc(1.5rem + 1vw);
+}
+
+/* MEDIA QUERIES */
+
+/* Pantallas muy grandes */
+@media (max-width: 1600px){
+    /* PRIMER-BLOQUE */
+    .lead{
+        font-size: 2rem;
+    }
+    .h1-principal {
+        font-size: 6rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (max-width: 1366px){
+    /* PRIMER-BLOQUE */
+    .lead{
+        font-size: 1.5rem;
+    }
+    .h1-principal {
+        font-size: 5rem;
+    }
+    #primer-bloque {
+        height: 60vh;
+    }
+}
+
+/* Tablets grandes, laptops y pantallas pequeñas */
+@media screen and (max-width: 1200px){
+     /* PRIMER-BLOQUE */
+     .lead{
+        font-size: 1.3rem;
+    }
+    .h1-principal {
+        font-size: 3rem;
+    }
+    #primer-bloque {
+        height: 60vh;
+    }
+}
+/* Tablets medianas (orientación vertical) */
+@media screen and (max-width: 992px){
+    /* PRIMER-BLOQUE */
+    .lead{
+        font-size: 1.1rem;
+    }
+    .h1-principal {
+        font-size: 2.8rem;
+    }
+    #primer-bloque {
+        height: 40vh;
+    }
+    .bg-container {
+        padding: 50px 50px;
+    }
+}
+
+/* smartphones medianos y grandes */
+@media (max-width: 768px){
+    /* PRIMER-BLOQUE */
+    .lead{
+        font-size: 1.1rem;
+    }
+    .h1-principal {
+        font-size: 2.8rem;
+    }
+    #primer-bloque {
+        height: 35vh;
+    }
+    .bg-container {
+        padding: 30px 30px;
+    }
+}
+
+/* smartphones pequeños */
+@media (max-width: 480px){
+     /* PRIMER-BLOQUE */
+     .lead{
+        font-size: 1rem;
+    }
+    .h1-principal {
+        font-size: 2rem;
+    }
+    #primer-bloque {
+        height: 35vh;
+    }
+    .bg-container {
+        padding: 30px 30px;
+    }
 }
