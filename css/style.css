@@ -197,31 +197,51 @@ main {
 .section-title h1 {
     font-size: 3rem;
   }
-  .section-title h2 {
+.section-title h2 {
     color: #4a2b10;
     margin-bottom: 2rem;
-  }
-  .coffee-circle img {
+}
+.coffee-circle img {
     width: 100%;
     max-width: 400px;
+}
+
+.rotar {
+    width: 100%; /* Tamaño dinámico según el contenedor */
+    max-width: 300px; /* Tamaño máximo */
+    height: auto; /* Mantener proporciones */
+    animation: girar 20s linear infinite; /* Animación de rotación */
   }
-  .card-title {
+
+/* Animación de rotación */
+@keyframes girar {
+    from {
+      transform: rotate(0deg); /* Inicio */
+    }
+    to {
+      transform: rotate(360deg); /* Rotación completa */
+    }
+}
+
+.card-title {
     font-size: 1.25rem;
     color: #4a2b10;
     font-weight: bold;
-  }
-  .card-text {
+}
+
+.card-text {
     font-size: 1rem;
     color: #6b4b31;
-  }
-  .card a {
+}
+.card a {
     text-decoration: none;
     font-weight: bold;
     color: #4a2b10;
-  }
-  .card a:hover {
+}
+.card a:hover {
     color: #7b5d44;
-  }
+}
+
 /* SEPARADORES */
 
 #separador_1 {
