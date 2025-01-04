@@ -5,7 +5,7 @@
     --color-crema: #FFF6EB;
     --color-rosa: #D83F5C;
     --color-beige-1: #D8C8B5;
-    --color-beige-2: #CEBAA1;
+    --color-beige-2: #D8C8B5;
 }
 
 * {
@@ -43,6 +43,10 @@ h1 {
 
 h2 {
     font-size: calc(2rem + 1vw);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:var(--color-marron);
 }
 
 .btn {
@@ -254,12 +258,29 @@ main {
 }
 
 /* PRODUCTOS */
-#square-buttons {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%
-    }
+.product {
+    background-color: var(--color-beige-2);
+}
+#productCarousel {
+    padding:3rem;
+}
 
+.carousel-control-prev i,
+.carousel-control-next i {
+    color: var(--color-marron);
+    transition: color 0.5s ease;
+}
+
+.carousel-control-prev i:hover,
+.carousel-control-next i:hover {
+    color: var(--color-rosa);
+}
+
+.carousel-inner {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
 /* BOTÓN BACK TO TOP */
 #btn-back-to-top {
     position: fixed;
