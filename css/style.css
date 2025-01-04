@@ -254,7 +254,11 @@ main {
 }
 
 /* PRODUCTOS */
-
+#square-buttons {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%
+    }
 
 /* BOTÓN BACK TO TOP */
 #btn-back-to-top {
