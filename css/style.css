@@ -8,15 +8,6 @@
     --color-beige-2: #CEBAA1;
 }
 
-
-p {
-  font-family: "Instrument Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 * {
     padding: 0;
     margin: 0;
@@ -32,10 +23,19 @@ img {
     vertical-align: middle;
 }
 
+p {
+    color: var(--color-marron);
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 a {
     text-decoration: none;
     color: var(--color-one);
 }
+
 h1 {
     font-weight: 700;
     font-size: calc(2.5rem + 1vw);
@@ -72,7 +72,6 @@ h2 {
 .btn-secondary:hover {
     background-color: var(--color-rosa);
     color: var(--color-crema);
-    transition: background-color 0.5s ease;
 }
 
 .widget-title, h2 {
@@ -193,55 +192,41 @@ main {
     padding:2rem;
 }
 /* CARTA */
-/* revisar todo esto y cambiar clases */
-.section-title h1 {
-    font-size: 3rem;
-  }
-.section-title h2 {
-    color: #4a2b10;
-    margin-bottom: 2rem;
-}
+/* Rotación para la imagen */
 .coffee-circle img {
-    width: 100%;
-    max-width: 400px;
+    animation: girar 20s linear infinite; /* Rotación suave */
 }
-
-.rotar {
-    width: 100%; /* Tamaño dinámico según el contenedor */
-    max-width: 300px; /* Tamaño máximo */
-    height: auto; /* Mantener proporciones */
-    animation: girar 20s linear infinite; /* Animación de rotación */
-  }
-
+  
 /* Animación de rotación */
 @keyframes girar {
     from {
-      transform: rotate(0deg); /* Inicio */
+      transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg); /* Rotación completa */
+      transform: rotate(360deg);
     }
 }
 
+.card {
+    max-width: 100%; /* Ocupa todo el espacio permitido */
+    margin: 0 auto; /* Centra las tarjetas en dispositivos pequeños */
+  }
 .card-title {
-    font-size: 1.25rem;
-    color: #4a2b10;
-    font-weight: bold;
+    font-size: calc(1.5rem + 1vw);
+    font-family:"Instrument Serif", serif;
+    color: var(--color-marron);
 }
 
-.card-text {
-    font-size: 1rem;
-    color: #6b4b31;
-}
 .card a {
     text-decoration: none;
-    font-weight: bold;
-    color: #4a2b10;
-}
-.card a:hover {
-    color: #7b5d44;
+    font-weight: 500;
+    transition: color 0.5s ease;
+    color: var(--color-marron);
 }
 
+.card a:hover {
+    color: var(--color-rosa);
+  }
 /* SEPARADORES */
 
 #separador_1 {
@@ -267,6 +252,9 @@ main {
     background-size: cover;
     background-position: center;
 }
+
+/* PRODUCTOS */
+
 
 /* BOTÓN BACK TO TOP */
 #btn-back-to-top {
