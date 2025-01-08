@@ -5,17 +5,8 @@
     --color-crema: #FFF6EB;
     --color-rosa: #D83F5C;
     --color-beige-1: #D8C8B5;
-    --color-beige-2: #CEBAA1;
+    --color-beige-2: #c4ad93;
 }
-
-
-p {
-  font-family: "Instrument Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 * {
     padding: 0;
@@ -23,6 +14,7 @@ p {
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Instrument Sans", serif;
+    color:var(--color-marron)
 }
 
 /* Selectores generales */
@@ -31,9 +23,30 @@ img {
     vertical-align: middle;
 }
 
+p {
+    color: var(--color-marron);
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 a {
     text-decoration: none;
     color: var(--color-one);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: calc(2.5rem + 1vw);
+}
+
+h2 {
+    font-size: calc(2rem + 1vw);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:var(--color-marron);
 }
 
 .btn {
@@ -63,11 +76,18 @@ a {
 .btn-secondary:hover {
     background-color: var(--color-rosa);
     color: var(--color-crema);
-    transition: background-color 0.5s ease;
 }
 
-.widget-title {
+.widget-title, h2 {
     font-family: "Instrument Serif", serif !important;
+}
+
+.fa-brands, .fa-chevron-down {
+    color:var(--color-crema);
+    transition: color 0.3s ease;
+}
+.fa-brands:hover, .fa-chevron-down:hover{
+    color:var(--color-rosa);
 }
 
 /* NAV */
@@ -143,10 +163,11 @@ a {
     height: 100%;           /* Asegúrate de que ocupe toda la altura */
     text-align: center;     /* Alinea el texto dentro de cada línea */
 }
-#header_title H1 {
+#header_title h1 {
     font-family: "Instrument Serif", serif;
     color:var(--color-crema);
-    font-size: calc(3rem + 1vw);
+    font-size: calc(3.5rem + 1vw);
+    font-weight: 400;
 
 }
 #video_background {
@@ -158,16 +179,151 @@ a {
     object-fit: cover; 
 }
 
+.fa-chevron-down {
+    position: absolute; /* Cambiar a fixed si quieres que siempre esté visible */
+    bottom: 70px; /* Ajusta el valor para moverla más abajo */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* MAIN */
+/* Selectores generales del main */
 main {
     background-color: var(--color-crema);
+}
+
+#carta, #productos, #merch, #ubicaciones {
+    padding:2rem;
+}
+/* CARTA */
+/* Rotación para la imagen */
+.coffee-circle img {
+    animation: girar 20s linear infinite; /* Rotación suave */
+}
+  
+/* Animación de rotación */
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.card {
+    max-width: 100%; /* Ocupa todo el espacio permitido */
+    margin: 0 auto; /* Centra las tarjetas en dispositivos pequeños */
+  }
+.card-title {
+    font-size: calc(1.5rem + 1vw);
+    font-family:"Instrument Serif", serif;
+    color: var(--color-marron);
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.5s ease;
+    color: var(--color-marron);
+}
+
+.card a:hover {
+    color: var(--color-rosa);
+  }
+/* SEPARADORES */
+
+#separador_1 {
+    background-image: url(https://images.unsplash.com/photo-1643133277762-8a46ab585344?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#separador_2 {
+    background-image: url(https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#separador_3 {
+    background-image: url(https://images.unsplash.com/photo-1643133277762-8a46ab585344?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* PRODUCTOS Y MERCH */
+.card {
+    background-color: var(--color-beige-1);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.15);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.cards .card {
+    flex: 0 0 calc(25% - 1.25rem); 
+}
+
+.card:hover {
+    background-color: var(--color-beige-2);
+}
+
+.card-title {
+    font-size: 1.25rem; 
+}
+
+.card-content {
+    margin-top: 1.25rem; 
+}
+
+/* Estilos del scroll */
+.cards::-webkit-scrollbar {
+    height: 0.75rem; 
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background-color: var(--color-marron);
+    border-radius: 50px;
+
+}
+
+.cards::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-rosa);
+}
+
+.cards::-webkit-scrollbar-track {
+    background: var(--color-beige-1);
+    border-radius: 50px;
+}
+
+
+/* UBICACION */
+.location-col-r, .location-col-l {
+    width: 50%;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 40rem;
+}
+
+#text-location {
+    padding: 0 0 0 1rem;
 }
 
 /* BOTÓN BACK TO TOP */
 #btn-back-to-top {
     position: fixed;
-    bottom: 18px;
-    right: 18px;
+    bottom: 30px;   
+    right: 30px;
     display: none;
 }
 
@@ -185,14 +341,6 @@ footer {
     color:var(--color-crema)!important;
 }
 
-.fa-brands {
-    color:var(--color-crema);
-    transition: color 0.3s ease;
-}
-.fa-brands:hover {
-    color:var(--color-rosa);
-}
-
 #logo_white {
     padding-bottom:1rem;
 }
@@ -203,4 +351,43 @@ footer {
 
 .widget-title {
     font-size: calc(1.5rem + 1vw);
+}
+
+/* MEDIA QUERIES */ 
+@media screen and (max-width: 1390px){
+    
+
+}
+
+@media screen and (max-width: 1100px){
+    /* Productos y merch */
+    .cards .card {
+        flex: 0 0 calc(33% - 0.625rem); 
+    }
+
+    /* Ubicacion */
+    .location-col-r, .location-col-l {
+        width: 100%;
+    }
+
+    #text-location {
+        padding:1rem 0 0 0;
+    }  
+}
+
+
+@media screen and (max-width: 900px) {
+    /* Productos y merch */
+    .cards .card {
+        flex: 0 0 calc(50% - 0.625rem); 
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    /* Productos y merch */
+    .cards .card {
+        flex: 0 0 calc(100% - 0.625rem); 
+    }
+   
 }
