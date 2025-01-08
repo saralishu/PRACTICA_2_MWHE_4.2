@@ -78,6 +78,20 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-crema);
 }
 
+.btn-terciary {
+    background-color: var(--color-crema);
+    border: 1px solid var(--color-marron);
+    font-weight: 600;
+    color: var(--color-marron);
+    transition: background-color 0.5s ease;
+}
+
+.btn-terciary:hover {
+    background-color: var(--color-rosa);
+    border: 1px solid var(--color-rosa);
+    color: var(--color-crema);
+}
+
 .widget-title, h2 {
     font-family: "Instrument Serif", serif !important;
 }
@@ -251,7 +265,15 @@ main {
 }
 
 #separador_3 {
-    background-image: url(https://images.unsplash.com/photo-1643133277762-8a46ab585344?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1507914372368-b2b085b925a1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#separador_4 {
+    background-image: url(https://images.unsplash.com/photo-1510083300914-5ffac797d9d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     height: 60vh;
     background-attachment: fixed;
     background-size: cover;
@@ -304,6 +326,14 @@ main {
     border-radius: 50px;
 }
 
+/* MODAL MERCH Y PRODUCTOS */
+
+.modal-content {
+    background-color: var(--color-crema);
+}
+#modalDescription {
+    color: var(--color-marron) !important;
+}
 
 /* UBICACION */
 .location-col-r, .location-col-l {

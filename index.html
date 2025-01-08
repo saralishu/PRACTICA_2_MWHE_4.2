@@ -208,8 +208,7 @@
                 <img src="media/img/DULCES_SUEÑOS_SOMBRA.png" class="card-img-top" alt="">
                 <h3>Dulces Sueños</h3>
                 <h5>30,95€</h5>
-                <p class="card-text">Un café descafeinado por el método Swiss Water, conservando su perfil dulce y afrutado.
-                </p>
+                <p class="card-text">Un café descafeinado por el método Swiss Water, conservando su perfil dulce y afrutado.</p>
                 <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>
@@ -219,8 +218,7 @@
                 <img src="media/img/TIERRA_PROMETIDA_SOMBRAS.png" class="card-img-top" alt="">
                 <h3>Tierra Prometida</h3>
                 <h5>30,95€</h5>
-                <p class="card-text">Un café brillante y limpio, con notas de manzana verde y miel. Perfecto para un café de filtro suave y refrescante.
-                </p>
+                <p class="card-text">Un café brillante y limpio, con notas de manzana verde y miel. Un café de filtro suave y refrescante.</p>
                 <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>
@@ -230,7 +228,7 @@
                 <img src="media/img/FUEGO_VERACRUZ_SOMBRA.png" class="card-img-top" alt="">
                 <h3>Fuego Veracruz</h3>
                 <h5>30,95€</h5>
-                <p class="card-text">Cuerpo robusto con notas de chocolate amargo y un toque de especias. Ideal para quienes disfrutan de un café fuerte y audaz.</p>
+                <p class="card-text">Cuerpo robusto con notas de chocolate amargo y un toque de especias fuerte y audaz.</p>
                 <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>
@@ -256,8 +254,8 @@
                 <div class="card-content mt-3">
                   <img src="media/img/tote_espressura_sombra.png" class="card-img-top" alt="">
                   <h3>Totebag</h3>
-                  <h5>30,95€</h5>
-                  <p class="card-text">Totebag exclusiva de espressura.</p>
+                  <h5>15,95€</h5>
+                  <p class="card-text">Totebag exclusiva de Espressura, sólo online.</p>
                   <button type="button" class="btn btn-primary">Comprar</button>
                 </div>
             </div>
@@ -267,7 +265,7 @@
                 <img src="media/img/llaves.png" class="card-img-top" alt="">
                 <h3>Landyard</h3>
                 <h5>4,95€</h5>
-                <p class="card-text">Landyard para llevar siempre las llaves contigo, junto a tu cafetería favorita.</p>
+                <p class="card-text">Para llevar siempre las llaves contigo, junto a tu cafetería favorita.</p>
                 <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>
@@ -287,7 +285,7 @@
                 <img src="media/img/posa_vas.png" class="card-img-top" alt="">
                 <h3>Posa Vasos</h3>
                 <h5>1,95€</h5>
-                <p class="card-text">Posa vasos personalizados, edición espressura.</p>
+                <p class="card-text">Posa vasos personalizados, edición limitada hasta fin de existencias.</p>
                 <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>
@@ -297,7 +295,7 @@
                 <img src="media/img/polo_work.png" class="card-img-top" alt="">
                 <h3>Polo Espressura</h3>
                 <h5>22,95€</h5>
-                <p class="card-text">Polo de trabajo Espressura, para que te sientas parte de nuestra comunidad.</p>
+                <p class="card-text">Para que te sientas parte de nuestra comunidad.</p>
                 <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>
@@ -307,7 +305,7 @@
                 <img src="media/img/cuadernos.png" class="card-img-top" alt="">
                 <h3>Cuadernos</h3>
                 <h5>30,95€</h5>
-                <p class="card-text">Tres cuadernos coleccionables espressura, para apuntar todas las actividades de nuestra cafetería.</p>
+                <p class="card-text">Tres cuadernos coleccionables,para apuntar tu día a día.</p>
                 <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>
@@ -333,7 +331,71 @@
             </div>
         </div>     
       </div>
+
+      <!-- MODAL -->
+      <!-- Modal de detalles del producto -->
+      <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Detalles del producto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column flex-lg-row align-items-center">
+              <!-- Imagen del producto -->
+              <div class="modal-image mb-3 mb-lg-0 me-lg-4 text-center">
+                <img id="modalImage" src="" alt="Producto" class="img-fluid rounded">
+              </div>
+              <!-- Contenido -->
+              <div class="modal-content-details text-lg-start text-center">
+                <h3 id="modalTitle" class="mb-3"></h3>
+                <h5 id="modalPrice" class="mb-3"></h5>
+                <p id="modalDescription" class="mb-4"></p>
+                <div class="modal-buttons">
+                  <button type="button" class="btn btn-terciary me-2 mb-2" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary mb-2" data-bs-target="#checkoutModal" data-bs-toggle="modal">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal de pasarela de compra -->
+      <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="checkoutModalLabel">Pasarela de compra</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="nameInput" class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control" id="nameInput" placeholder="Introduce tu nombre">
+                </div>
+                <div class="mb-3">
+                  <label for="emailInput" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="emailInput" placeholder="Introduce tu correo">
+                </div>
+                <div class="mb-3">
+                  <label for="addressInput" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="addressInput" placeholder="Introduce tu dirección">
+                </div>
+                <div class="mb-3">
+                  <label for="quantityInput" class="form-label">Cantidad</label>
+                  <input type="number" class="form-control" id="quantityInput" min="1" value="1">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Pagar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
+
 
    <!-- SEPARADOR 3 -->
     <section id="separador_3"></section>
@@ -374,7 +436,7 @@
     </section>
 
     <!-- SEPARADOR 4 -->
-    <section id="separador_2"></section>
+    <section id="separador_4"></section>
 
     <!-- 3D -->
     <section id="3D" class="py-5 text-center">

@@ -29,8 +29,6 @@ $(document).ready(function () {
 });
 
 
-
-
 // BOTÓN PARA VOLVER ARRIBA
 
 let $myButton = $("#btn-back-to-top");
@@ -43,12 +41,31 @@ let $myButton = $("#btn-back-to-top");
         $myButton.hide();
     }});
 
-    // When the user clicks on the button, scroll to the top of the document
     $myButton.on("click", function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
+// MODAL DE COMPRA - PRODUCTOS Y MERCH 
+$(document).ready(function () {
+    // Capturar clic en botones "Comprar"
+    $(".btn-primary").on("click", function () {
+      const $card = $(this).closest(".card");
+      const title = $card.find("h3").text();
+      const price = $card.find("h5").text();
+      const description = $card.find(".card-text").text();
+      const image = $card.find(".card-img-top").attr("src");
 
+      // Configurar contenido del modal
+      $("#modalTitle").text(title);
+      $("#modalPrice").text(price);
+      $("#modalDescription").text(description);
+      $("#modalImage").attr("src", image);
+
+      // Mostrar el modal
+      $("#productModal").modal("show");
+    });
+  });
+// SUSCRIPCIÓN A LA NEWSLETTER
 $('#newsletterForm').on('submit', function(event) {
     event.preventDefault();
     const emailInput = $('#email-newsletter');
