@@ -32,8 +32,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- 3D -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>  
 </head>
 <body>
   <header>
@@ -504,23 +503,32 @@
       <div class="section-title">
         <h1>CAFETERÍA</h1>
         <h2>Descubre como son nuestras cafeterías</h2>
-      </div>
-      <div id="container_location" class="container-fluid text-align-justify flex-wrap row g-0">
-        <model-viewer src="pantone_claro_oscuro.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+        <model-viewer 
+        alt="La cafetería de tus sueños." 
+        src="pantone_claro_oscuro.gltf" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        tone-mapping="neutral" 
+        poster="assets/models/NeilArmstrong.webp" 
+        shadow-intensity="1" 
+        auto-rotate
+        camera-controls 
+        touch-action="pan-y"
+        style="width: 100%; height: 500px;">>
           <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
+            <div class="update-bar"></div>
           </div>
           <button slot="ar-button" id="ar-button">
-              View in your space
+            View in your space
           </button>
         </model-viewer>
-      
-        <div id="text-location" class="location-col-r text-justify">
-          <p>texto
-          </p>
-        </div>
       </div>
     </section>
+</section>
+
+
+
 
     <!-- Botón para ir arriba -->
     <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top" style="display: inline-block;">
@@ -571,7 +579,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body" id="modal-body-content">
-                    ¡Gracias por unirte  <strong id="user-email"></strong> Muy pronto tendrás noticias nuestras...
+                    ¡Gracias por unirte <strong id="user-email"></strong> Muy pronto tendrás noticias nuestras...
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Gracias</button>
