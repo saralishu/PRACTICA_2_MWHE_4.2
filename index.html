@@ -61,11 +61,11 @@
                   <a href="#ubicaciones" data-bs-toggle="collapse">UBICACIONES</a>
               </li>
               <li class="my-3">
-                <a href="aboutus.html" data-bs-toggle="collapse">SOBRE NOSOTROS</a>
-            </li>
-            <li class="my-3">
-              <a href="#" data-bs-toggle="collapse">BLOG</a>
-          </li>
+                <a href="aboutus.html" data-bs-toggle="collapse" target="_blank">SOBRE NOSOTROS</a>
+              </li>
+              <li class="my-3">
+                <a href="" data-bs-toggle="collapse" target="_blank">BLOG</a>
+              </li>
           </ul>
       </nav>
     </div>
@@ -88,7 +88,7 @@
           <h1>CARTA</h1>
           <h2>Sabores únicos para cada momento y gusto</h2>
         </div>
-    
+
         <!-- Contenedor dividido en dos columnas -->
         <div class="row flex-lg-row-reverse align-items-center">
           <!-- Imagen -->
@@ -97,7 +97,7 @@
               <img src="media/img/img_central_carta.png" class="rotar img-fluid" alt="">
             </div>
           </div>
-    
+
           <!-- Tarjetas -->
           <div class="col-12 col-lg-6 d-flex flex-column gap-4">
             <!-- Especialidades de la Casa -->
@@ -105,40 +105,100 @@
               <div class="card-body">
                 <h5 class="card-title">Especialidades de la Casa</h5>
                 <p class="card-text">Café único, granos selectos y recetas que despiertan tus sentidos.</p>
-                <a href="#">Ver más</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEspecialidades">Ver más</a>
               </div>
             </div>
-    
+
             <!-- Clásicos Espressura -->
             <div class="card border-0 bg-transparent text-center">
               <div class="card-body">
                 <h5 class="card-title">Clásicos Espressura</h5>
                 <p class="card-text">Los favoritos de siempre, preparados con maestría y pasión. Simples, perfectos, irresistibles.</p>
-                <a href="#">Ver más</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalClasicos">Ver más</a>
               </div>
             </div>
-    
+
             <!-- Acompañamientos -->
             <div class="card border-0 bg-transparent text-center">
               <div class="card-body">
                 <h5 class="card-title">Para acompañar</h5>
                 <p class="card-text">El complemento perfecto: dulces, salados y siempre deliciosos. ¡Mmmmm...!</p>
-                <a href="#">Ver más</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAcompanamientos">Ver más</a>
               </div>
             </div>
-    
+
             <!-- Xmas Special -->
             <div class="card border-0 bg-transparent text-center">
               <div class="card-body">
                 <h5 class="card-title">Christmas Special</h5>
                 <p class="card-text">Sabores festivos que llenan tu taza de magia navideña. ¡Solo por tiempo limitado!</p>
-                <a href="#">Ver más</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalXmas">Ver más</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal Especialidades de la Casa -->
+    <div class="modal fade" id="modalEspecialidades" tabindex="-1" aria-labelledby="modalEspecialidadesLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEspecialidadesLabel">Especialidades de la Casa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Disfruta de nuestros cafés exclusivos, creados a partir de granos selectos y con recetas que realzan los sabores más finos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Clásicos Espressura -->
+    <div class="modal fade" id="modalClasicos" tabindex="-1" aria-labelledby="modalClasicosLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalClasicosLabel">Clásicos Espressura</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Los favoritos de siempre, con el toque único de Espressura. Preparamos tus clásicos con la mejor técnica.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Acompañamientos -->
+    <div class="modal fade" id="modalAcompanamientos" tabindex="-1" aria-labelledby="modalAcompanamientosLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalAcompanamientosLabel">Para acompañar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>El complemento perfecto para tus cafés. Desde dulces irresistibles hasta deliciosas opciones saladas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Xmas Special -->
+    <div class="modal fade" id="modalXmas" tabindex="-1" aria-labelledby="modalXmasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalXmasLabel">Christmas Special</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Experimenta los sabores únicos de la temporada navideña con nuestras ediciones especiales limitadas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
       
     <!-- SEPARADOR 1 -->
     <section id="separador_1"></section>
@@ -155,83 +215,81 @@
             <!-- Tarjeta 1 -->
             <div class="card flex-shrink-0 p-3">
                 <div class="card-content mt-3">
-                  <img src="media/img/SELVA_DORADA-SOMBRAS.png" class="card-img-top" alt="">
+                  <img src="media/img/img_product_selva.webp" class="card-img-top" alt="">
                   <h3>Selva Dorada</h3>
                   <h5>30,95€</h5>
                   <p class="card-text">Un café suave con notas de caramelo y frutas tropicales, ideal para disfrutar en la mañana.</p>
-                  <button type="button" class="btn btn-primary">Comprar</button>
+                  <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
                 </div>
             </div>
             <!-- Tarjeta 2 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/ECLIPSE_ESPRESSO_SOMBRA.png" class="card-img-top" alt="">
+                <img src="media/img/img_product_eclipse.webp" class="card-img-top" alt="">
                 <h3>Eclipse Espresso</h3>
                 <h5>30,95€</h5>
                 <p class="card-text">Intenso y con cuerpo, perfecto para preparar espressos con un toque de chocolate amargo.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 3 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/BRISA_ETIOPE.png" class="card-img-top" alt="">
+                <img src="media/img/img_product_brisa.webp" class="card-img-top" alt="">
                 <h3>Brisa Etíope</h3>
                 <h5>30,95€</h5>
                 <p class="card-text">Aromas florales y notas cítricas, ideal para métodos de filtrado como pour-over o Chemex.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 4 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/MONTAÑA_OLIMPICA_SOMBRAS.png" class="card-img-top" alt="">
+                <img src="media/img/img_product_montana.webp" class="card-img-top" alt="">
                 <h3>Montaña Olímpica</h3>
                 <h5>30,95€</h5>
                 <p class="card-text">Exclusivo y equilibrado, con toques de nuez y chocolate, famoso por su suavidad excepcional.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 5 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/VOLCAN_SUPREMO_SOMBRAS.png" class="card-img-top" alt="">
+                <img src="media/img/img_product_volcan.webp" class="card-img-top" alt="">
                 <h3>Volcán Supremo</h3>
                 <h5>30,95€</h5>
                 <p class="card-text">Rico en cuerpo, con notas de cacao, especias y un toque ahumado. Perfecto para cualquier ocasión.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 6 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/DULCES_SUEÑOS_SOMBRA.png" class="card-img-top" alt="">
+                <img src="media/img/img_product_dulces.webp" class="card-img-top" alt="">
                 <h3>Dulces Sueños</h3>
                 <h5>30,95€</h5>
-                <p class="card-text">Un café descafeinado por el método Swiss Water, conservando su perfil dulce y afrutado.
-                </p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <p class="card-text">Un café descafeinado por el método Swiss Water, conservando su perfil dulce y afrutado.</p>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 7 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/TIERRA_PROMETIDA_SOMBRAS.png" class="card-img-top" alt="">
+                <img src="media/img/img_product_tierra.webp" class="card-img-top" alt="">
                 <h3>Tierra Prometida</h3>
                 <h5>30,95€</h5>
-                <p class="card-text">Un café brillante y limpio, con notas de manzana verde y miel. Perfecto para un café de filtro suave y refrescante.
-                </p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <p class="card-text">Un café brillante y limpio, con notas de manzana verde y miel. Un café de filtro suave y refrescante.</p>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 8 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/FUEGO_VERACRUZ_SOMBRA.png" class="card-img-top" alt="">
+                <img src="media/img/img_product_fuego.webp" class="card-img-top" alt="">
                 <h3>Fuego Veracruz</h3>
                 <h5>30,95€</h5>
-                <p class="card-text">Cuerpo robusto con notas de chocolate amargo y un toque de especias. Ideal para quienes disfrutan de un café fuerte y audaz.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <p class="card-text">Cuerpo robusto con notas de chocolate amargo y un toque de especias fuerte y audaz.</p>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
         </div>     
@@ -254,86 +312,151 @@
             <!-- Tarjeta 1 -->
             <div class="card flex-shrink-0 p-3">
                 <div class="card-content mt-3">
-                  <img src="media/img/tote_espressura_sombra.png" class="card-img-top" alt="">
+                  <img src="media/img/img_merch_tote.webp" class="card-img-top" alt="">
                   <h3>Totebag</h3>
-                  <h5>30,95€</h5>
-                  <p class="card-text">Totebag exclusiva de espressura.</p>
-                  <button type="button" class="btn btn-primary">Comprar</button>
+                  <h5>15,95€</h5>
+                  <p class="card-text">Totebag exclusiva de Espressura, sólo online.</p>
+                  <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
                 </div>
             </div>
             <!-- Tarjeta 4 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/llaves.png" class="card-img-top" alt="">
+                <img src="media/img/img_merch_lanyard.webp" class="card-img-top" alt="">
                 <h3>Landyard</h3>
                 <h5>4,95€</h5>
-                <p class="card-text">Landyard para llevar siempre las llaves contigo, junto a tu cafetería favorita.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <p class="card-text">Para llevar siempre las llaves contigo, junto a tu cafetería favorita.</p>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 5 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/sti.png" class="card-img-top" alt="">
+                <img src="media/img/img_merch_pegatinas.webp" class="card-img-top" alt="">
                 <h3>Stickers</h3>
                 <h5>3,95€</h5>
                 <p class="card-text">Una tira de pegatinas para compartir el orgullo espressura.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 6 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/posa_vas.png" class="card-img-top" alt="">
-                <h3>Posa Vasos</h3>
+                <img src="media/img/img_merch_posavasos.webp" class="card-img-top" alt="">
+                <h3>Posavasos</h3>
                 <h5>1,95€</h5>
-                <p class="card-text">Posa vasos personalizados, edición espressura.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <p class="card-text">Posa vasos personalizados, edición limitada hasta fin de existencias.</p>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 7 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/polo_work.png" class="card-img-top" alt="">
+                <img src="media/img/img_merch_polo.webp" class="card-img-top" alt="">
                 <h3>Polo Espressura</h3>
                 <h5>22,95€</h5>
-                <p class="card-text">Polo de trabajo Espressura, para que te sientas parte de nuestra comunidad.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <p class="card-text">Para que te sientas parte de nuestra comunidad.</p>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 8 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/cuadernos.png" class="card-img-top" alt="">
+                <img src="media/img/img_merch_cuadernos.webp" class="card-img-top" alt="">
                 <h3>Cuadernos</h3>
                 <h5>30,95€</h5>
-                <p class="card-text">Tres cuadernos coleccionables espressura, para apuntar todas las actividades de nuestra cafetería.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <p class="card-text">Tres cuadernos coleccionables,para apuntar tu día a día.</p>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 3 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/tazas_tamaño.png" class="card-img-top" alt="">
+                <img src="media/img/img_merch_tazas.webp" class="card-img-top" alt="">
                 <h3>Tazas</h3>
                 <h5>30,95€</h5>
                 <p class="card-text">Tres tazas coleccionables espressura para una mejor experiencia de nuestro café.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
             <!-- Tarjeta 2 -->
             <div class="card flex-shrink-0 p-3">
               <div class="card-content mt-3">
-                <img src="media/img/espressura.png" class="card-img-top" alt="">
+                <img src="media/img/img_merch_mascota.webp" class="card-img-top" alt="">
                 <h3>Espressura Mascota</h3>
                 <h5>9,95€</h5>
                 <p class="card-text">Nada mejor para empezar el día que con nuestro amigue Espressura.</p>
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <button type="button" class="btn btn-primary btn-product-buy">Comprar</button>
               </div>
             </div>
         </div>     
       </div>
+
+      <!-- MODAL -->
+      <!-- Modal de detalles del producto -->
+      <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Detalles del producto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column flex-lg-row align-items-center">
+              <!-- Imagen del producto -->
+              <div class="modal-image mb-3 mb-lg-0 me-lg-4 text-center">
+                <img id="modalImage" src="" alt="Producto" class="img-fluid rounded">
+              </div>
+              <!-- Contenido -->
+              <div class="modal-content-details text-lg-start text-center">
+                <h3 id="modalTitle" class="mb-3"></h3>
+                <h5 id="modalPrice" class="mb-3"></h5>
+                <p id="modalDescription" class="mb-4"></p>
+                <div class="modal-buttons">
+                  <button type="button" class="btn btn-terciary me-2 mb-2" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary mb-2" data-bs-target="#checkoutModal" data-bs-toggle="modal">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal de pasarela de compra -->
+      <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Pasarela de compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Introduce tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Introduce tu correo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="addressInput" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="addressInput" placeholder="Introduce tu dirección">
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantityInput" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="quantityInput" min="1" value="1">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" id="payButton">Pagar</button> <!-- Botón Pagar -->
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
     </section>
+
 
    <!-- SEPARADOR 3 -->
     <section id="separador_3"></section>
@@ -374,7 +497,7 @@
     </section>
 
     <!-- SEPARADOR 4 -->
-    <section id="separador_2"></section>
+    <section id="separador_4"></section>
 
     <!-- 3D -->
     <section id="3D" class="py-5 text-center">
@@ -424,7 +547,7 @@
             </h4>
             <p class="mb-4">Queremos mantenerte al día con todas las novedades: nuevos orígenes, métodos exclusivos, promociones especiales y consejos para disfrutar del mejor specialty coffee.</p>
             <p class="mb-4">📩 Suscríbete a nuestra newsletter y vive la experiencia como nunca antes.</p>
-            <form id="newsletterForm">
+            <form id="newsletterForm" class="newsletter-form">
               <div class="row gy-4">
                 <div class="col-12">
                   <div class="input-group">
@@ -440,15 +563,15 @@
             </form>
             
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">YA ESTÁS SUSCRIT@!</h1>
+                    <h1 class="modal-title fs-5" id="newsletterModalLabel">YA ESTÁS SUSCRIT@!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body" id="modal-body-content">
-                    ¡Gracias por unirte  <strong id="user-email"></strong>! Muy pronto tendrás noticias nuestras...
+                    ¡Gracias por unirte  <strong id="user-email"></strong> Muy pronto tendrás noticias nuestras...
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Gracias</button>
@@ -476,27 +599,27 @@
           <div class="social-media-wrapper">
             <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-md-end">
               <li class="me-3">
-                <a href="https://www.facebook.com/" class="">
+                <a href="https://www.facebook.com/" class=""  target="_blank">
                   <i class="fa-brands fa-facebook fa-xl"></i>
                 </a>
               </li>
               <li class="me-3">
-                <a href="https://www.instagram.com/" class="">
+                <a href="https://www.instagram.com/" class=""  target="_blank">
                   <i class="fa-brands fa-instagram fa-xl"></i>
                 </a>
               </li>
               <li class="me-3">
-                <a href="https://www.tiktok.com/es/" class="link-light">
+                <a href="https://www.tiktok.com/es/" class="link-light"  target="_blank">
                   <i class="fa-brands fa-tiktok fa-xl"></i>
                 </a>
               </li>
               <li class="me-3">
-                <a href="https://x.com/?lang=es&mx=2" class="">
+                <a href="https://x.com/?lang=es&mx=2" class=""  target="_blank">
                   <i class="fa-brands fa-x-twitter fa-xl"></i>
                 </a>
               </li>
               <li class="me-3">
-                <a href="https://www.youtube.com/" class="">
+                <a href="https://www.youtube.com/" class=""  target="_blank">
                   <i class="fa-brands fa-youtube fa-xl"></i>
                 </a>
               </li>
@@ -516,7 +639,7 @@
         </div>
         <div class="modal-body" id="modal-body-content">
           Parece que hemos tenido un pequeño problema, porfavor vulve a intentarlo más tarde.
-          Sentimos las molestias :)
+          Sentimos las molestias
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">De acuerdo</button>

@@ -29,6 +29,7 @@ p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: calc(0.3rem + 1vw);
 }
 
 a {
@@ -75,6 +76,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-secondary:hover {
     background-color: var(--color-rosa);
+    color: var(--color-crema);
+}
+
+.btn-terciary {
+    background-color: var(--color-crema);
+    border: 1px solid var(--color-marron);
+    font-weight: 600;
+    color: var(--color-marron);
+    transition: background-color 0.5s ease;
+}
+
+.btn-terciary:hover {
+    background-color: var(--color-rosa);
+    border: 1px solid var(--color-rosa);
     color: var(--color-crema);
 }
 
@@ -226,12 +241,8 @@ main {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.5s ease;
-    color: var(--color-marron);
 }
-
-.card a:hover {
-    color: var(--color-rosa);
-  }
+/* VENTANAS MODALES DE LA CARTA */
   
 /* SEPARADORES */
 #separador_1 {
@@ -251,7 +262,15 @@ main {
 }
 
 #separador_3 {
-    background-image: url(https://images.unsplash.com/photo-1643133277762-8a46ab585344?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1507914372368-b2b085b925a1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#separador_4 {
+    background-image: url(https://images.unsplash.com/photo-1510083300914-5ffac797d9d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     height: 60vh;
     background-attachment: fixed;
     background-size: cover;
@@ -304,6 +323,14 @@ main {
     border-radius: 50px;
 }
 
+/* MODAL MERCH Y PRODUCTOS */
+
+.modal-content {
+    background-color: var(--color-crema);
+}
+#modalDescription {
+    color: var(--color-marron) !important;
+}
 
 /* UBICACION */
 .location-col-r, .location-col-l {
@@ -365,6 +392,46 @@ footer {
 .widget-title {
     font-size: calc(1.5rem + 1vw);
 }
+
+
+/* PÁGINA ABOUT US */
+
+#header_title_2 {
+    position: absolute;  /* Permite posicionar el contenido sobre el video */
+    z-index: 2;          /* Hace que el texto esté por encima del video */
+    color: var(--color-two);        /* Color del texto para que destaque sobre el video */
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;    /* Centra horizontalmente */
+    text-align: center;     /* Alinea el texto dentro de cada línea */
+}
+#title-header, #p-header, #p-header > b  {
+    color:var(--color-crema);
+}
+
+b {
+    font-weight: 700;
+}
+
+#foto_background {
+    object-fit: cover;  /* Asegura que el video cubra toda el área sin distorsionarse */
+    z-index: 1;         /* Hace que el video esté por detrás del contenido */
+    width: 100%;
+    height:90vh;
+    vertical-align:middle;
+    object-fit: cover; 
+}
+
+.bg-container {
+    background-color: var(--color-marron);
+    padding: 4rem;
+    border-radius: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+
+}
+
 
 /* MEDIA QUERIES */ 
 @media screen and (max-width: 1390px){
