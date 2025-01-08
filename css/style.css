@@ -138,26 +138,29 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 .h1-principal {
     font-size: 7rem;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .lead {
     font-size: 2.5rem;
 }
+
 b {
     font-weight: bold !important;
 }
+
 .bg-container {
     background-color: var(--color-marron);
-    padding: 100px 100px;
+    padding: 50px 50px;
     border-radius: 80px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     color: var(--color-crema);
     max-width: 80%;
     text-align: center;
-
 }
 
 /* SEGUNDO BLOQUE */
