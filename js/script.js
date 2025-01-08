@@ -12,6 +12,12 @@ $(document).ready(function () {
     $("#close, #menu a").click(function () {
         $("#menu").removeClass("translate-start").addClass("translate-end");
     });
+
+    // Inicializar Locomotive Scroll
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true
+    });
 });
 
 
