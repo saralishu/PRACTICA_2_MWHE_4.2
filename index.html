@@ -2,35 +2,38 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ESPRESSURA</title>
-   
-    <meta name="description" content="Espressura">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ESPRESSURA</title>
+  
+  <meta name="description" content="Espressura">
 
-    <meta name="author" content="Sara Lishu González, Macarena González y Lucía Lastra">
+  <meta name="author" content="Sara Lishu González, Macarena González y Lucía Lastra">
+  
+  <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon.png">
+
+  <!-- !-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- CDN del CSS DE BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
-    <!-- FAVICON -->
-     <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- !-- JQUERY -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <!-- CDN del CSS DE BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+  <!-- TIPOGRAFIAS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-    <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-    <!-- TIPOGRAFIAS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-
+  <!-- 3D -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
   <header>
@@ -335,7 +338,7 @@
    <!-- SEPARADOR 3 -->
     <section id="separador_3"></section>
 
-  <!-- UBICACIONES -->
+    <!-- UBICACIONES -->
     <section id="ubicaciones" class="py-5 text-center">
       <div class="section-title">
         <h1>UBICACIONES</h1>
@@ -368,6 +371,25 @@
           <p>Ven y descubre cómo en Espressura elevamos cada taza a una experiencia única. No solo se trata de café, sino de un viaje sensorial en el que cada detalle cuenta: desde el aroma envolvente de los granos recién molidos hasta el cuidado en cada extracción. Queremos que disfrutes de un momento especial, rodeado de espacios que reflejan la esencia y la energía de Madrid. Déjate llevar por la pasión que nos mueve y encuentra en Espressura el lugar donde el café se convierte en arte. 🌟☕</p>
         </div>
     </div>
+    </section>
+
+    <!-- SEPARADOR 4 -->
+    <section id="separador_2"></section>
+
+    <!-- 3D -->
+    <section id="3D" class="py-5 text-center">
+      <div class="section-title">
+        <h1>CAFETERÍA</h1>
+        <h2>Descubre como son nuestras cafeterías</h2>
+      </div>
+      <div id="container_location" class="container-fluid text-align-justify flex-wrap row g-0">
+        <div>
+          <model-viewer camera-controls touch-action="pan-y" alt="A 3D model of our cofee shop." src="assets/Cafea_pantone.gltf"></model-viewer>        
+        </div>
+        <div id="text-location" class="location-col-r text-justify">
+          <p>texto</p>
+        </div>
+      </div>
     </section>
 
     <!-- Botón para ir arriba -->
