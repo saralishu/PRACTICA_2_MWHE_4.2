@@ -383,11 +383,18 @@
         <h2>Descubre como son nuestras cafeterías</h2>
       </div>
       <div id="container_location" class="container-fluid text-align-justify flex-wrap row g-0">
-        <div>
-          <model-viewer camera-controls touch-action="pan-y" alt="A 3D model of our cofee shop." src="assets/Cafea_pantone.gltf"></model-viewer>        
-        </div>
+        <model-viewer src="pantone_claro_oscuro.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+          <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">
+              View in your space
+          </button>
+        </model-viewer>
+      
         <div id="text-location" class="location-col-r text-justify">
-          <p>texto</p>
+          <p>texto
+          </p>
         </div>
       </div>
     </section>
