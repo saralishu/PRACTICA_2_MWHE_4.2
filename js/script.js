@@ -14,10 +14,12 @@ $(function () {
         $("#menu").removeClass("translate-start").addClass("translate-end");
     });
 
-    // Desplazamiento suave
+    // Desplazamiento suave o navegación a otro HTML
     $("#menu a").on("click", function (event) {
         var target = $(this).attr("href"); // Obtén el destino del enlace
-        if (target.startsWith("#")) { // Asegúrate de que es un anclaje interno
+        
+        // Verificar si el enlace es a una sección interna
+        if (target.startsWith("#")) { 
             event.preventDefault(); // Previene el comportamiento predeterminado
             $("html, body").animate(
                 {
@@ -26,8 +28,14 @@ $(function () {
                 200 // Duración de la animación en milisegundos
             );
         }
+        // Verificar si el enlace es a otro archivo HTML
+        else if (target && target !== "#") {
+            // Permitir la navegación a otro archivo HTML sin prevenir el comportamiento predeterminado
+            window.location.href = target;
+        }
     });
 });
+
 
 // 2. BOTÓN PARA VOLVER ARRIBA
 $(function () {

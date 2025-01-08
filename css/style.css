@@ -29,6 +29,7 @@ p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: calc(0.5rem + 1vw);
 }
 
 a {
@@ -391,6 +392,46 @@ footer {
 .widget-title {
     font-size: calc(1.5rem + 1vw);
 }
+
+
+/* PÁGINA ABOUT US */
+
+#header_title_2 {
+    position: absolute;  /* Permite posicionar el contenido sobre el video */
+    z-index: 2;          /* Hace que el texto esté por encima del video */
+    color: var(--color-two);        /* Color del texto para que destaque sobre el video */
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;    /* Centra horizontalmente */
+    text-align: center;     /* Alinea el texto dentro de cada línea */
+}
+#title-header, #p-header, #p-header > b  {
+    color:var(--color-crema);
+}
+
+b {
+    font-weight: 700;
+}
+
+#foto_background {
+    object-fit: cover;  /* Asegura que el video cubra toda el área sin distorsionarse */
+    z-index: 1;         /* Hace que el video esté por detrás del contenido */
+    width: 100%;
+    height:90vh;
+    vertical-align:middle;
+    object-fit: cover; 
+}
+
+.bg-container {
+    background-color: var(--color-marron);
+    padding: 4rem;
+    border-radius: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+
+}
+
 
 /* MEDIA QUERIES */ 
 @media screen and (max-width: 1390px){
