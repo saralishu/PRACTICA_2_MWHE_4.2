@@ -2,41 +2,44 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ESPRESSURA</title>
-   
-    <meta name="description" content="Espressura">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ESPRESSURA</title>
+  
+  <meta name="description" content="Espressura">
 
-    <meta name="author" content="Sara Lishu González, Macarena González y Lucía Lastra">
+  <meta name="author" content="Sara Lishu González, Macarena González y Lucía Lastra">
+  
+  <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon.png">
+
+  <!-- !-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- CDN del CSS DE BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
-    <!-- FAVICON -->
-     <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- !-- JQUERY -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <!-- CDN del CSS DE BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+  <!-- TIPOGRAFIAS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-    <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-    <!-- TIPOGRAFIAS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-
+  <!-- 3D -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
   <header>
     <!-- Menú -->
     <div id="menu-bar" class="d-flex align-items-center justify-content-between px-4 py-3">
-      <a href="#navbar">
+      <a href="#menu-bar">
         <img src="media/img/logo-espressura-01.png" alt="" width="60" height="60">
       </a>
       <i class="fa-sharp fa-solid fa-bars" id="menu-toggle"></i>
@@ -68,29 +71,341 @@
     </div>
   </header>
   <main>
-    <section class="header_web" data-aos="fade-up" data-aos-duration="1000">
+    <section class="header_web">
       <div id="header_title">
         <h1>Donde el café se toma en serio, </h1>
         <h1>pero la vida no tanto.</h1>
+        <a href="#carta"><i class="fa-solid fa-chevron-down fa-2xl"></i></a>
       </div>
       <video autoplay muted loop id="video_background" src="media/video/video_header.mp4"></video>
-    </section>  
+    </section> 
+    
+    <!-- CARTA -->
+    <section id="carta" class="py-5 text-center">
+      <div class="container">
+        <!-- Título -->
+        <div class="section-title mb-5">
+          <h1>CARTA</h1>
+          <h2>Sabores únicos para cada momento y gusto</h2>
+        </div>
+    
+        <!-- Contenedor dividido en dos columnas -->
+        <div class="row flex-lg-row-reverse align-items-center">
+          <!-- Imagen -->
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <div class="coffee-circle">
+              <img src="media/img/img_central_carta.png" class="rotar img-fluid" alt="">
+            </div>
+          </div>
+    
+          <!-- Tarjetas -->
+          <div class="col-12 col-lg-6 d-flex flex-column gap-4">
+            <!-- Especialidades de la Casa -->
+            <div class="card border-0 bg-transparent text-center">
+              <div class="card-body">
+                <h5 class="card-title">Especialidades de la Casa</h5>
+                <p class="card-text">Café único, granos selectos y recetas que despiertan tus sentidos.</p>
+                <a href="#">Ver más</a>
+              </div>
+            </div>
+    
+            <!-- Clásicos Espressura -->
+            <div class="card border-0 bg-transparent text-center">
+              <div class="card-body">
+                <h5 class="card-title">Clásicos Espressura</h5>
+                <p class="card-text">Los favoritos de siempre, preparados con maestría y pasión. Simples, perfectos, irresistibles.</p>
+                <a href="#">Ver más</a>
+              </div>
+            </div>
+    
+            <!-- Acompañamientos -->
+            <div class="card border-0 bg-transparent text-center">
+              <div class="card-body">
+                <h5 class="card-title">Para acompañar</h5>
+                <p class="card-text">El complemento perfecto: dulces, salados y siempre deliciosos. ¡Mmmmm...!</p>
+                <a href="#">Ver más</a>
+              </div>
+            </div>
+    
+            <!-- Xmas Special -->
+            <div class="card border-0 bg-transparent text-center">
+              <div class="card-body">
+                <h5 class="card-title">Christmas Special</h5>
+                <p class="card-text">Sabores festivos que llenan tu taza de magia navideña. ¡Solo por tiempo limitado!</p>
+                <a href="#">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <!-- SEPARADOR 1 -->
+    <section id="separador_1"></section>
 
-    <section id="carta"></section>
+    <!-- PRODUCTOS -->
+    <section id="productos" class="py-5 text-center">
+      <div class="section-title">
+        <h1>PRODUCTOS</h1>
+        <h2>El mejor café llega a la puerta de casa</h2>
+      </div>
+      <div class="container my-5 position-relative">
+        <!-- Contenedor de tarjetas -->
+        <div class="d-flex gap-3 overflow-auto py-3 cards">
+            <!-- Tarjeta 1 -->
+            <div class="card flex-shrink-0 p-3">
+                <div class="card-content mt-3">
+                  <img src="media/img/SELVA_DORADA-SOMBRAS.png" class="card-img-top" alt="">
+                  <h3>Selva Dorada</h3>
+                  <h5>30,95€</h5>
+                  <p class="card-text">Un café suave con notas de caramelo y frutas tropicales, ideal para disfrutar en la mañana.</p>
+                  <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/ECLIPSE_ESPRESSO_SOMBRA.png" class="card-img-top" alt="">
+                <h3>Eclipse Espresso</h3>
+                <h5>30,95€</h5>
+                <p class="card-text">Intenso y con cuerpo, perfecto para preparar espressos con un toque de chocolate amargo.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/BRISA_ETIOPE.png" class="card-img-top" alt="">
+                <h3>Brisa Etíope</h3>
+                <h5>30,95€</h5>
+                <p class="card-text">Aromas florales y notas cítricas, ideal para métodos de filtrado como pour-over o Chemex.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/MONTAÑA_OLIMPICA_SOMBRAS.png" class="card-img-top" alt="">
+                <h3>Montaña Olímpica</h3>
+                <h5>30,95€</h5>
+                <p class="card-text">Exclusivo y equilibrado, con toques de nuez y chocolate, famoso por su suavidad excepcional.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/VOLCAN_SUPREMO_SOMBRAS.png" class="card-img-top" alt="">
+                <h3>Volcán Supremo</h3>
+                <h5>30,95€</h5>
+                <p class="card-text">Rico en cuerpo, con notas de cacao, especias y un toque ahumado. Perfecto para cualquier ocasión.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 6 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/DULCES_SUEÑOS_SOMBRA.png" class="card-img-top" alt="">
+                <h3>Dulces Sueños</h3>
+                <h5>30,95€</h5>
+                <p class="card-text">Un café descafeinado por el método Swiss Water, conservando su perfil dulce y afrutado.
+                </p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 7 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/TIERRA_PROMETIDA_SOMBRAS.png" class="card-img-top" alt="">
+                <h3>Tierra Prometida</h3>
+                <h5>30,95€</h5>
+                <p class="card-text">Un café brillante y limpio, con notas de manzana verde y miel. Perfecto para un café de filtro suave y refrescante.
+                </p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 8 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/FUEGO_VERACRUZ_SOMBRA.png" class="card-img-top" alt="">
+                <h3>Fuego Veracruz</h3>
+                <h5>30,95€</h5>
+                <p class="card-text">Cuerpo robusto con notas de chocolate amargo y un toque de especias. Ideal para quienes disfrutan de un café fuerte y audaz.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+        </div>     
+      </div>
+      
+    </section>
 
-    <section id="productos"></section>
+    <!-- SEPARADOR 2 -->
+    <section id="separador_2"></section>
 
-    <section id="merch"></section>
+    <!-- MERCH -->
+    <section id="merch" class="py-5 text-center">
+      <div class="section-title">
+        <h1>MERCH</h1>
+        <h2>Dale sabor a tus accesorios</h2>
+      </div>
+      <div class="container my-5 position-relative">
+        <!-- Contenedor de tarjetas -->
+        <div class="d-flex gap-3 overflow-auto py-3 cards">
+            <!-- Tarjeta 1 -->
+            <div class="card flex-shrink-0 p-3">
+                <div class="card-content mt-3">
+                  <img src="media/img/tote_espressura_sombra.png" class="card-img-top" alt="">
+                  <h3>Totebag</h3>
+                  <h5>30,95€</h5>
+                  <p class="card-text">Totebag exclusiva de espressura.</p>
+                  <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/llaves.png" class="card-img-top" alt="">
+                <h3>Landyard</h3>
+                <h5>4,95€</h5>
+                <p class="card-text">Landyard para llevar siempre las llaves contigo, junto a tu cafetería favorita.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/sti.png" class="card-img-top" alt="">
+                <h3>Stickers</h3>
+                <h5>3,95€</h5>
+                <p class="card-text">Una tira de pegatinas para compartir el orgullo espressura.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 6 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/posa_vas.png" class="card-img-top" alt="">
+                <h3>Posa Vasos</h3>
+                <h5>1,95€</h5>
+                <p class="card-text">Posa vasos personalizados, edición espressura.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 7 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/polo_work.png" class="card-img-top" alt="">
+                <h3>Polo Espressura</h3>
+                <h5>22,95€</h5>
+                <p class="card-text">Polo de trabajo Espressura, para que te sientas parte de nuestra comunidad.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 8 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/cuadernos.png" class="card-img-top" alt="">
+                <h3>Cuadernos</h3>
+                <h5>30,95€</h5>
+                <p class="card-text">Tres cuadernos coleccionables espressura, para apuntar todas las actividades de nuestra cafetería.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/tazas_tamaño.png" class="card-img-top" alt="">
+                <h3>Tazas</h3>
+                <h5>30,95€</h5>
+                <p class="card-text">Tres tazas coleccionables espressura para una mejor experiencia de nuestro café.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="card flex-shrink-0 p-3">
+              <div class="card-content mt-3">
+                <img src="media/img/espressura.png" class="card-img-top" alt="">
+                <h3>Espressura Mascota</h3>
+                <h5>9,95€</h5>
+                <p class="card-text">Nada mejor para empezar el día que con nuestro amigue Espressura.</p>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+        </div>     
+      </div>
+    </section>
 
-    <section id="ubicaciones"></section>
+   <!-- SEPARADOR 3 -->
+    <section id="separador_3"></section>
+
+    <!-- UBICACIONES -->
+    <section id="ubicaciones" class="py-5 text-center">
+      <div class="section-title mb-5">
+        <h1>UBICACIONES</h1>
+        <h2>¡Encuéntranos!</h2>
+      </div>
+      <div id="container_location" class="container-fluid text-align-justify flex-wrap row g-0">
+        <div class="location-col-l">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1f6GrLUDTRdtHAdDRWwNga0iPN4bj56c&ehbc=2E312F" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="text-location" class="location-col-r text-justify">
+          <p>En Espressura, el arte del café de especialidad cobra vida en cuatro ubicaciones únicas en el corazón de Madrid. Cada espacio está diseñado para brindarte una experiencia inolvidable mientras disfrutas de los mejores granos cuidadosamente seleccionados:</p>
+          <div>
+            <h4>C. Gran Vía, 48</h4>
+            <p>Sumérgete en el vibrante pulso de la Gran Vía con un café que combina tradición y modernidad.</p>
+          </div>
+          <div>
+            <h4>C. de Manuela Malasaña, 31</h4>
+            <p>Encuentra un refugio acogedor en el dinámico barrio de Malasaña, perfecto para una pausa con estilo.</p>
+          </div>
+          
+          <div>
+            <h4>Mercado de San Ildefonso</h4>
+            <p>Vive el espíritu cosmopolita del mercado mientras degustas un café que despierta los sentidos.</p>
+          </div>
+          
+          <div>
+            <h4>Plaza de Santa Bárbara</h4>
+            <p>Relájate en esta plaza emblemática, donde el tiempo parece detenerse con cada sorbo.</p>
+          </div>
+          <p>Ven y descubre cómo en Espressura elevamos cada taza a una experiencia única. No solo se trata de café, sino de un viaje sensorial en el que cada detalle cuenta: desde el aroma envolvente de los granos recién molidos hasta el cuidado en cada extracción. Queremos que disfrutes de un momento especial, rodeado de espacios que reflejan la esencia y la energía de Madrid. Déjate llevar por la pasión que nos mueve y encuentra en Espressura el lugar donde el café se convierte en arte. 🌟☕</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- SEPARADOR 4 -->
+    <section id="separador_2"></section>
+
+    <!-- 3D -->
+    <section id="3D" class="py-5 text-center">
+      <div class="section-title">
+        <h1>CAFETERÍA</h1>
+        <h2>Descubre como son nuestras cafeterías</h2>
+      </div>
+      <div id="container_location" class="container-fluid text-align-justify flex-wrap row g-0">
+        <model-viewer src="pantone_claro_oscuro.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+          <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">
+              View in your space
+          </button>
+        </model-viewer>
+      
+        <div id="text-location" class="location-col-r text-justify">
+          <p>texto
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Botón para ir arriba -->
-    <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">
+    <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top" style="display: inline-block;">
       <i class="fas fa-arrow-up"></i>
     </button>
   </main>
   
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
     <!-- Widgets-->
   <section class=" py-4 py-md-5 py-xl-8 border-top">
@@ -98,7 +413,7 @@
       <div class="row gy-4 gy-lg-0 justify-content-xl-between">
         <div class="col-12 col-md-4 col-lg-3 col-xl-2" id="logo_white">
           <div class="widget">
-            <a href="#navbar">
+            <a href="#menu-bar">
               <img src="media/img/logo-espressura-01.png" alt="" width="15">
             </a>
           </div>
@@ -136,7 +451,7 @@
                     ¡Gracias por unirte  <strong id="user-email"></strong>! Muy pronto tendrás noticias nuestras...
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Gracias</button>
                   </div>
                 </div>
               </div>
@@ -161,32 +476,50 @@
           <div class="social-media-wrapper">
             <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-md-end">
               <li class="me-3">
-                <a href="#!" class="">
+                <a href="https://www.facebook.com/" class="">
                   <i class="fa-brands fa-facebook fa-xl"></i>
                 </a>
               </li>
               <li class="me-3">
-                <a href="#!" class="">
+                <a href="https://www.instagram.com/" class="">
                   <i class="fa-brands fa-instagram fa-xl"></i>
                 </a>
               </li>
               <li class="me-3">
-                <a href="#!" class="link-light">
+                <a href="https://www.tiktok.com/es/" class="link-light">
                   <i class="fa-brands fa-tiktok fa-xl"></i>
                 </a>
               </li>
               <li class="me-3">
-                <a href="#!" class="">
+                <a href="https://x.com/?lang=es&mx=2" class="">
                   <i class="fa-brands fa-x-twitter fa-xl"></i>
                 </a>
               </li>
               <li class="me-3">
-                <a href="#!" class="">
+                <a href="https://www.youtube.com/" class="">
                   <i class="fa-brands fa-youtube fa-xl"></i>
                 </a>
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- ERROR -->
+   <div class="modal fade" id="error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">¡UPS!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal-body-content">
+          Parece que hemos tenido un pequeño problema, porfavor vulve a intentarlo más tarde.
+          Sentimos las molestias :)
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">De acuerdo</button>
         </div>
       </div>
     </div>
