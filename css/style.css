@@ -240,12 +240,8 @@ main {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.5s ease;
-    color: var(--color-marron);
 }
-
-.card a:hover {
-    color: var(--color-rosa);
-  }
+/* VENTANAS MODALES DE LA CARTA */
   
 /* SEPARADORES */
 #separador_1 {

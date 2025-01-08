@@ -52,30 +52,31 @@ $(function () {
 $(function () {
     // Capturar clic en botones "Comprar" en las tarjetas de productos
     $(".btn-primary.btn-product-buy").on("click", function () {
-    const $card = $(this).closest(".card");
-    const title = $card.find("h3").text();
-    const price = $card.find("h5").text();
-    const description = $card.find(".card-text").text();
-    const image = $card.find(".card-img-top").attr("src");
-
-    // Configurar contenido del modal
-    $("#modalTitle").text(title);
-    $("#modalPrice").text(price);
-    $("#modalDescription").text(description);
-    $("#modalImage").attr("src", image);
-
-    // Mostrar el modal
-    $("#productModal").modal("show");
-});
+      const $card = $(this).closest(".card");
+      const title = $card.find("h3").text();
+      const price = $card.find("h5").text();
+      const description = $card.find(".card-text").text();
+      const image = $card.find(".card-img-top").attr("src");
   
-// Al dar clic en "Pagar" dentro del modal
-$(function () {
-        $("#productModal .btn-primary").on("click", function () {
-        // Cerrar el modal
-        $("#productModal").modal("hide");
-        });
+      // Configurar contenido del modal
+      $("#modalTitle").text(title);
+      $("#modalPrice").text(price);
+      $("#modalDescription").text(description);
+      $("#modalImage").attr("src", image);
+  
+      // Mostrar el modal de producto
+      $("#productModal").modal("show");
     });
-});
+  
+    // Al dar clic en "Pagar" dentro del modal de checkout
+    $("#checkoutModal #payButton").on("click", function (event) {
+      // Prevenir el envío del formulario (opcional si es un formulario)
+      event.preventDefault();
+  
+      // Cerrar el modal de la pasarela de compra
+      $("#checkoutModal").modal("hide");
+    });
+  });
 
 // 4. SUSCRIPCIÓN A LA NEWSLETTER
 $(function () {

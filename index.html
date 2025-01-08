@@ -81,6 +81,7 @@
     </section> 
     
     <!-- CARTA -->
+    <!-- CARTA -->
     <section id="carta" class="py-5 text-center">
       <div class="container">
         <!-- Título -->
@@ -88,7 +89,7 @@
           <h1>CARTA</h1>
           <h2>Sabores únicos para cada momento y gusto</h2>
         </div>
-    
+
         <!-- Contenedor dividido en dos columnas -->
         <div class="row flex-lg-row-reverse align-items-center">
           <!-- Imagen -->
@@ -97,7 +98,7 @@
               <img src="media/img/img_central_carta.png" class="rotar img-fluid" alt="">
             </div>
           </div>
-    
+
           <!-- Tarjetas -->
           <div class="col-12 col-lg-6 d-flex flex-column gap-4">
             <!-- Especialidades de la Casa -->
@@ -105,40 +106,100 @@
               <div class="card-body">
                 <h5 class="card-title">Especialidades de la Casa</h5>
                 <p class="card-text">Café único, granos selectos y recetas que despiertan tus sentidos.</p>
-                <a href="#">Ver más</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEspecialidades">Ver más</a>
               </div>
             </div>
-    
+
             <!-- Clásicos Espressura -->
             <div class="card border-0 bg-transparent text-center">
               <div class="card-body">
                 <h5 class="card-title">Clásicos Espressura</h5>
                 <p class="card-text">Los favoritos de siempre, preparados con maestría y pasión. Simples, perfectos, irresistibles.</p>
-                <a href="#">Ver más</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalClasicos">Ver más</a>
               </div>
             </div>
-    
+
             <!-- Acompañamientos -->
             <div class="card border-0 bg-transparent text-center">
               <div class="card-body">
                 <h5 class="card-title">Para acompañar</h5>
                 <p class="card-text">El complemento perfecto: dulces, salados y siempre deliciosos. ¡Mmmmm...!</p>
-                <a href="#">Ver más</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAcompanamientos">Ver más</a>
               </div>
             </div>
-    
+
             <!-- Xmas Special -->
             <div class="card border-0 bg-transparent text-center">
               <div class="card-body">
                 <h5 class="card-title">Christmas Special</h5>
                 <p class="card-text">Sabores festivos que llenan tu taza de magia navideña. ¡Solo por tiempo limitado!</p>
-                <a href="#">Ver más</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalXmas">Ver más</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal Especialidades de la Casa -->
+    <div class="modal fade" id="modalEspecialidades" tabindex="-1" aria-labelledby="modalEspecialidadesLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEspecialidadesLabel">Especialidades de la Casa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Disfruta de nuestros cafés exclusivos, creados a partir de granos selectos y con recetas que realzan los sabores más finos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Clásicos Espressura -->
+    <div class="modal fade" id="modalClasicos" tabindex="-1" aria-labelledby="modalClasicosLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalClasicosLabel">Clásicos Espressura</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Los favoritos de siempre, con el toque único de Espressura. Preparamos tus clásicos con la mejor técnica.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Acompañamientos -->
+    <div class="modal fade" id="modalAcompanamientos" tabindex="-1" aria-labelledby="modalAcompanamientosLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalAcompanamientosLabel">Para acompañar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>El complemento perfecto para tus cafés. Desde dulces irresistibles hasta deliciosas opciones saladas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Xmas Special -->
+    <div class="modal fade" id="modalXmas" tabindex="-1" aria-labelledby="modalXmasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalXmasLabel">Christmas Special</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Experimenta los sabores únicos de la temporada navideña con nuestras ediciones especiales limitadas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
       
     <!-- SEPARADOR 1 -->
     <section id="separador_1"></section>
@@ -364,35 +425,36 @@
       <!-- Modal de pasarela de compra -->
       <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="checkoutModalLabel">Pasarela de compra</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Pasarela de compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Introduce tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Introduce tu correo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="addressInput" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="addressInput" placeholder="Introduce tu dirección">
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantityInput" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="quantityInput" min="1" value="1">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" id="payButton">Pagar</button> <!-- Botón Pagar -->
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="nameInput" class="form-label">Nombre completo</label>
-                  <input type="text" class="form-control" id="nameInput" placeholder="Introduce tu nombre">
-                </div>
-                <div class="mb-3">
-                  <label for="emailInput" class="form-label">Correo electrónico</label>
-                  <input type="email" class="form-control" id="emailInput" placeholder="Introduce tu correo">
-                </div>
-                <div class="mb-3">
-                  <label for="addressInput" class="form-label">Dirección</label>
-                  <input type="text" class="form-control" id="addressInput" placeholder="Introduce tu dirección">
-                </div>
-                <div class="mb-3">
-                  <label for="quantityInput" class="form-label">Cantidad</label>
-                  <input type="number" class="form-control" id="quantityInput" min="1" value="1">
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Pagar</button>
-              </form>
-            </div>
-          </div>
         </div>
       </div>
+
 
     </section>
 
