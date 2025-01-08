@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ESPRESSURA</title>
+  
+  <meta name="description" content="Espressura">
+
+  <meta name="author" content="Sara Lishu González, Macarena González y Lucía Lastra">
+  
+  <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon.png">
+
+  <!-- !-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- CDN del CSS DE BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+  <!-- TIPOGRAFIAS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  
+  <!-- Locomotive Scroll JS -->
+  <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+  
+
+</head>
+<body>
+  <header>
+    <!-- Menú -->
+    <div id="menu-bar" class="d-flex align-items-center justify-content-between px-4 py-3">
+      <a href="#navbar">
+        <img src="media/img/logo-espressura-01.png" alt="" width="60" height="60">
+      </a>
+      <i class="fa-sharp fa-solid fa-bars" id="menu-toggle"></i>
+      <nav id="menu" class="ventana-menu position-fixed top-0 end-0 w-100 bg-secondary d-flex flex-column justify-content-center align-items-center vh-100 translate-end">
+          <span id="close" class="position-absolute top-0 end-0 me-3 mt-3">
+              <i class="fa-solid fa-xmark"></i>
+          </span>
+          <ul class="list-unstyled text-center">
+              <li class="my-3">
+                  <a href="#carta" data-bs-toggle="collapse">CARTA</a>
+              </li>
+              <li class="my-3">
+                  <a href="#productos" data-bs-toggle="collapse">PRODUCTOS</a>
+              </li>
+              <li class="my-3">
+                  <a href="#merch" data-bs-toggle="collapse">MERCH</a>
+              </li>
+              <li class="my-3">
+                  <a href="#ubicaciones" data-bs-toggle="collapse">UBICACIONES</a>
+              </li>
+              <li class="my-3">
+                <a href="#" data-bs-toggle="collapse">SOBRE NOSOTROS</a>
+            </li>
+            <li class="my-3">
+              <a href="#" data-bs-toggle="collapse">BLOG</a>
+          </li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main data-scroll-container>
+    <section data-scroll-section id="primer-bloque" class="bg-image d-flex align-items-center justify-content-center">
+      <div class="text-center bg-container">
+        <h1 class="h1-principal">SOBRE NOSOTR@S</h1>
+        <p class="lead">En Espressura, <b>celebramos el arte del café</b> en cada taza.
+          Nos especializamos en café de alta calidad,
+          <b>cuidadosamente seleccionado y preparado</b> para
+          resaltar sus sabores únicos. <br>
+          Aquí, <b>cada grano cuenta una historia</b>, y nuestra pasión es compartirla
+          contigo en un ambiente acogedor y lleno de buena vibra.</p>
+      </div>
+    </section>  
+    
+    <section data-scroll-section id="segundo-bloque" class="d-flex align-items-center">
+      <div class="col-md-6 img-container">
+          <img src="media/img/planta-semillas.jpg" alt="Imagen planta cafe" class="img-fluid">
+      </div>
+      <div class="col-md-6 text-container d-flex align-items-center justify-content-center">
+          <div>
+              <h2 class="display-4">Misión</h2>
+              <p class="lead">En Espressura, nuestra misión es ofrecer café de especialidadque inspire momentos extraordinarios. Nos dedicamos a trabajar con productores comprometidos, garantizar la más alta calidad en cada grano y crear experiencias únicas que conecten a las personas a través del arte del café.</p>
+          </div>
+      </div>
+    </section>
+
+    <section data-scroll-section id="tercer-bloque" class="d-flex">
+      <div class="text-container">
+          <div>
+              <h2 class="display-4">Visión</h2>
+              <p class="lead">Convertirnos en un espacio donde la creatividad, la innovación y la pasión por el café redefinan cómo las personas se relacionan con esta bebida, inspirando una cultura que valore la autenticidad y celebre los momentos compartidos.</p>
+          </div>
+      </div>
+      <div class="img-container">
+          <img src="media/img/recolecta.jpg" alt="Imagen recolecta cafe">
+      </div>
+    </section>
+
+    <section data-scroll-section id="cuarto-bloque" class="d-flex align-items-center">
+      <div class="img-container">
+        <img src="media/img/tazas.jpg" alt="Imagen planta cafe">
+      </div>
+      <div class="col-md-6 text-container d-flex align-items-center justify-content-center">
+          <div>
+              <h2 class="display-4">Valores</h2>
+              <p class="lead">
+                  - Seleccionamos y preparamos cada para garantizar una experiencia única. <br>
+                  - Promovemos prácticas responsables que respeten a las personas y al medio ambiente. <br>
+                  - Valoramos la esencia de cada café, cada historia y cada experiencia. <br>
+                  - Exploramos nuevas formas de crear y disfrutar el café, siempre buscando sorprender. <br>
+                  - Creemos en el poder del café para conectar y construir comunidades. <br>
+                  - Trabajamos con productores locales para destacar la riqueza de su trabajo y sus regiones.</p>
+          </div>
+      </div>
+    </section>
+
+    <section id="video-bloque">
+        <video autoplay loop muted playsinline class="video-bg">
+            <source src="media/video/2115827968.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <div class="row top">
+                <span class="word-left">Sostenibilidad</span>
+                <span class="word-right">Innovación</span>
+            </div>
+            <div class="row center">
+                <span>Compromiso con el origen</span>
+            </div>
+            <div class="row bottom">
+                <span class="word-left">Calidad ante todo</span>
+                <span class="word-right">Pasión por las personas</span>
+            </div>
+            <div class="row final">
+                <span>Autenticidad</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="bloque-tazas">
+      <div class="text-container">
+          <h1>EL EQUIPO</h1>
+          <h2>Tres apasionadas del café de especialidad, unidas por el amor al buen sabor y al trabajo bien hecho.
+          </h2>
+      </div>
+      <div class="circles-container">
+        <div class="circle-container">
+          <div class="circle">
+              <img src="media/img/taza-naranja.webp" alt="Taza 1">
+          </div>
+          <h3>Macarena</h3>
+          <p>A pesar de mi amor por el café, amo también el matcha.
+            ¿Ampliaremos nuestra carta en breves...?
+          </p>
+        </div>
+        
+        <div class="circle-container">
+          <div class="circle">
+              <img src="media/img/taza-azul.webp" alt="Taza 2">
+          </div>
+          <h3>Sara</h3>
+          <p>Probé mi primer café a los 5 años. Para sorpresa de 
+            mis padres, fue un flechazo a primera vista.
+          </p>
+        </div>
+          
+        <div class="circle-container">
+          <div class="circle">
+              <img src="media/img/taza-verde.webp" alt="Taza 3">
+          </div>
+          <h3>Lucy</h3>
+          <p>No puedo empezar el día sin un buen mocha. ¿Café y chocolate? Sí, gracias.</p>
+        </div>
+      </div>
+  </section>
+    
+
+    <!-- Botón para ir arriba -->
+    <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </main>
+  
+  <!-- FOOTER -->
+  <footer class="footer">
+    <!-- Widgets-->
+  <section class=" py-4 py-md-5 py-xl-8 border-top">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2" id="logo_white">
+          <div class="widget">
+            <a href="#menu-bar">
+              <img src="media/img/logo-espressura-01.png" alt="" width="15">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-xl-4" id="newsletter_container">
+          <div class="widget">
+            <h4 class="widget-title mb-4">¡Únete a nuestra comunidad de amantes del café!
+            </h4>
+            <p class="mb-4">Queremos mantenerte al día con todas las novedades: nuevos orígenes, métodos exclusivos, promociones especiales y consejos para disfrutar del mejor specialty coffee.</p>
+            <p class="mb-4">📩 Suscríbete a nuestra newsletter y vive la experiencia como nunca antes.</p>
+            <form id="newsletterForm">
+              <div class="row gy-4">
+                <div class="col-12">
+                  <div class="input-group">
+                    <input type="email" class="form-control" id="email-newsletter" placeholder="Email Address" aria-label="email-newsletter" required>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-grid">
+                    <button class="btn btn-secondary" type="submit">SUSCRÍBETE</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">YA ESTÁS SUSCRIT@!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" id="modal-body-content">
+                    ¡Gracias por unirte  <strong id="user-email"></strong>! Muy pronto tendrás noticias nuestras...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Gracias</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright -->
+  <div class=" py-4 py-md-5 py-xl-8 border-top">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-md-0 align-items-md-center">
+        <div class="col-xs-12 col-md-7 order-1 order-md-0">
+          <div class="copyright text-center text-md-start">
+            &copy; 2024. Todos los derechos reservados.
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-5 order-0 order-md-1">
+          <div class="social-media-wrapper">
+            <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-md-end">
+              <li class="me-3">
+                <a href="https://www.facebook.com/" class="">
+                  <i class="fa-brands fa-facebook fa-xl"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="https://www.instagram.com/" class="">
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="https://www.tiktok.com/es/" class="link-light">
+                  <i class="fa-brands fa-tiktok fa-xl"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="https://x.com/?lang=es&mx=2" class="">
+                  <i class="fa-brands fa-x-twitter fa-xl"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="https://www.youtube.com/" class="">
+                  <i class="fa-brands fa-youtube fa-xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- AOS  -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+
+  <!-- Incluir Locomotive Scroll JS -->
+  <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+
+  <!-- Link al JS de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+  <!-- Link al Script propio -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
