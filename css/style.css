@@ -777,6 +777,10 @@ footer {
 /* smartphones medianos y grandes */
 @media (max-width: 768px){
     /* INDEX */
+    .modal-dialog {
+        width:auto;
+        max-width: 90vh;
+    }
     /* PRODUCTOS Y MERCH */
     .cards .card {
         flex: 0 0 calc(100% - 0.625rem); 
